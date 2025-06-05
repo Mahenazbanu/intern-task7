@@ -1,0 +1,95 @@
+# 🔐 Chromium Extension Risk Assessment Report
+
+## 🧩 Extension: Chromium PDF Viewer
+
+**ID:** `mhjbmdgcfjbbpaeojfohoefgiehjai`  
+**Version:** 1  
+**Installed:** *Detected in your system (date may vary based on file metadata)*  
+
+---
+
+### 🧑‍💻 Developer Information
+
+- **Author:** Unknown  
+  - The extension is not from the Chrome Web Store, so no official developer information is available.
+- **Homepage:** Not specified
+- **Reputation:** ❌ Unverified  
+  - Since it’s not from the Chrome Web Store, its origin and trustworthiness cannot be confirmed.
+
+---
+
+### 🔐 Permissions Requested
+
+#### Declared Permissions:
+- **No special permissions required.**
+
+#### Host Permissions:
+- **This extension has no additional site access.**
+
+🔍 **Analysis:**
+- The extension does not request any permissions or access to specific sites.
+- However, this lack of transparency could indicate that it operates silently without user awareness.
+
+⚠️ **Potential Concerns:**
+- Extensions installed outside the Chrome Web Store are inherently riskier because they bypass Google's security审查 process.
+- Without explicit permissions, it’s unclear what data or functionality the extension accesses.
+
+---
+
+### 📦 Installation Source & Date
+
+- **Source:** Not from the Chrome Web Store.
+- **Likely Installed Manually**: Directly uploaded by the user.
+- **Date Installed:** *Not explicitly shown in the screenshot.*
+
+---
+
+### 📊 Resource Usage
+
+- **CPU Usage:** Likely minimal since it doesn’t require special permissions.
+- **RAM Usage:** Less than 1 MB (as indicated in the screenshot).
+- **Background Activity:** No indication of background processes or scripts.
+
+⚠️ **Note**: While low resource usage is good, the lack of permissions doesn’t necessarily mean it’s safe — especially if it’s an untrusted source.
+
+---
+
+### ⭐ User Reviews & Reputation
+
+- **Reviews:** None available since it’s not listed on the Chrome Web Store.
+- **Summary:**  
+  - No community feedback or ratings to assess reliability.
+  - Absence of reviews raises concerns about its legitimacy and safety.
+
+---
+
+### 🚨 Risk Flags
+
+| Flag | Description |
+|------|-------------|
+| 🛑 Official Developer? | ❌ Unknown — Not from Chrome Web Store |
+| 🕵️ Excessive Permissions? | ✅ No permissions requested (potentially suspicious) |
+| ❗ Generic Name or Vague Publisher? | ✅ Yes — No author or homepage provided |
+| 📉 Negative Reviews or Reports? | ❌ None found (but also no positive reviews) |
+| 💻 System Lag or Resource Abuse? | ❌ No — Low resource usage |
+
+---
+
+### 📈 System Behavior Monitoring Tips
+
+To monitor this extension’s behavior:
+
+```bash
+# Monitor memory/CPU usage
+top -p $(pgrep chromium)
+
+# Inspect network activity (if desired)
+sudo tcpdump -i lo -nn port 80 or port 443 -w chromium_pdf_viewer_traffic.pcap
+ 
+📋 Actionable Suggestions :
+
+    ✔️ Remove : This extension is risky due to its unknown origin and lack of permissions.
+    ⚠️ Verify Source : If you must keep it, ensure it comes from a trusted source.
+    🛑 Do Not Use : Avoid installing extensions outside the Chrome Web Store unless necessary.
+    🔄 Update Regularly : Ensure always running latest version from official source (if applicable).
+     
